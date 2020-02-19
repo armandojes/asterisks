@@ -1,0 +1,46 @@
+{
+  "name": "asterisks",
+  "version": "0.0.1",
+  "description": "asterisks",
+  "main": "public/build.js",
+  "scripts": {
+    "watch": "set NODE_ENV=development&& webpack --watch --mode development",
+    "build": "set NODE_ENV=production&& webpack  --mode production",
+    "server": "static-server -z --port 3000 --index public/index.html -n public/index.html",
+    "deploy": "npm run build && now --prod",
+    "start": "npm run build && npm run server"
+  },
+  "author": "armando de jesus",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "install": "^0.13.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "now": "^16.7.3",
+    "now-cli": "0.0.0",
+    "npm": "^6.13.6",
+    "prop-types": "^15.7.2",
+    "static-server": "^2.2.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "regenerator-runtime": "^0.13.3"
+  }
+}

@@ -1,0 +1,26 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+.input{
+  border: 1px solid #2196F3;
+  border-radius: 5px 0px 0px 05px;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.button{
+  background: #2196F3;
+  border: 1px solid #2196F3;
+  padding: 10px;
+  border-radius: 0px 5px 5px 0px;
+  width: 20%;
+  text-align: center;
+  color: #fff;
+}
